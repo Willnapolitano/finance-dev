@@ -1,0 +1,150 @@
+:root{
+    --dark-blue: #363f5f;
+    --purple: #bf40bf;
+    --purple-dark: #ec18ec;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 234, 234);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*HEADER-----------------------*/
+header{
+    background-color: #939;
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+header h1{
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/*TITLES-----------------------*/
+
+h2{
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: normal;
+}
+
+/*END TITLES-------------------*/
+/*END HEADER-------------------*/
+
+/*MAIN-------------------------*/
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/*BALANCE---------------------*/
+
+#balance{
+    margin-top: -8rem;
+}
+
+#balance h2{
+    color: #fff;
+    margin-top: 0;
+}
+
+/*CARDS----------------*/
+
+.card{
+    background-color: #fff;
+    color: var(--dark-blue);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.441);
+}
+
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.card.total{
+    background-color: var(--purple);
+    color: #fff;
+}
+/*END CARDS----------------*/
+
+
+/*END BALANCE-----------------*/
+
+/*TRANSACTIONS----------------*/
+
+#data-table{
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+
+table th{
+    background-color: #fff;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+table tbody tr{
+    opacity: 0.7;
+}
+
+table tbody tr:hover{
+    opacity: 1;
+}
+
+table td{
+    background-color: #fff;
+    padding: 1rem 2rem;
+}
+
+td.description{
+    color: var(--dark-blue)
+}
+
+td.income{
+    color: var(--purple-dark)
+}
+
+td.expense{
+    color: #e92929;
+}
+/*END TRANSACTION-------------*/
+
+/*END MAIN---------------------*/
+
+/*FOOTER-----------------------*/
+
+footer{
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
+}
+
+/*END FOOTER-------------------*/
