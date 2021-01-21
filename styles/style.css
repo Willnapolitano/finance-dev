@@ -1,7 +1,7 @@
 :root{
     --dark-blue: #363f5f;
-    --purple: #bf40bf;
-    --purple-dark: #ec18ec;
+    --blue: #0A38FC;
+    --cyan: #0AFCBC;
 }
 *{
     margin: 0;
@@ -10,20 +10,20 @@
 }
 
 body{
-    background-color: rgb(245, 234, 234);
+    background-color: rgb(211, 236, 240);
     font-family: 'Raleway', sans-serif;
 }
 
 
 /*HEADER-----------------------*/
 header{
-    background-color: #939;
+    background: linear-gradient(40deg, var(--blue), var(--cyan));
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
 header h1{
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
@@ -66,7 +66,7 @@ h2{
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
-    box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.441);
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.379);
 }
 
 .card h3{
@@ -81,7 +81,7 @@ h2{
 }
 
 .card.total{
-    background-color: var(--purple);
+    background: linear-gradient(40deg, var(--blue),var(--cyan)100%);
     color: #fff;
 }
 /*END CARDS----------------*/
@@ -128,7 +128,7 @@ td.description{
 }
 
 td.income{
-    color: var(--purple-dark)
+    color: var(--blue)
 }
 
 td.expense{
