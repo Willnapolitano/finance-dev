@@ -3,6 +3,12 @@
     --blue: #0A38FC;
     --light-blue: rgb(47, 103, 214);
     --cyan: #0AFCBC;
+    --white-blued: rgb(211, 236, 240);
+    --white: #fff;
+    --red: #ff0000;
+    --black-transparent379: rgba(0, 0, 0, 0.379);
+    --black-transparent7: rgba(0, 0, 0, 0.7);
+    --gray: #5f5f5f;
 }
 *{
     margin: 0;
@@ -15,7 +21,7 @@ html{
 }
 
 body{
-    background-color: rgb(211, 236, 240);
+    background-color: var(--white-blued);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -30,7 +36,7 @@ header{
 header h1{
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: var(--white);
 }
 
 /*TITLES-----------------------*/
@@ -60,7 +66,7 @@ button{
     width: 100%;
     height: 50px;
     border: none;
-    color: white;
+    color: var(--white);
     background-color: var(--blue);
     border-radius: 0.25rem;
     cursor: pointer;
@@ -74,20 +80,22 @@ button{
 }
 
 .button.cancel{
-    color: red;
-    border: 2px red solid;
+    color: var(--white);
+    border: 2px var(--red) solid;
+    background-color: var(--red);
     border-radius: 0.25rem;
     height: 50px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.6;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 .button.cancel:hover{
-    opacity: 1;
+    opacity: 0.7;
+    transition: all .2s ease-out;
 }
 
 /* BUTTONS AND LINKS-----------*/
@@ -120,19 +128,19 @@ button{
 }
 
 #balance h2{
-    color: #fff;
+    color: var(--white);
     margin-top: 0;
 }
 
 /*CARDS----------------*/
 
 .card{
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--dark-blue);
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.379);
+    box-shadow: -3px 3px 3px var(--black-transparent379);
 }
 
 .card h3{
@@ -151,7 +159,7 @@ button{
 
 .card.total{
     background: linear-gradient(40deg, var(--blue),var(--cyan)100%);
-    color: #fff;
+    color: var(--white);
 }
 /*END CARDS----------------*/
 
@@ -169,8 +177,9 @@ button{
 #data-table{
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #5f5f5f;
+    color: var(--gray);
 }
+
 
 table thead tr th:first-child,
 table tbody tr td:first-child{
@@ -184,7 +193,7 @@ table tbody tr td:last-child{
 
 
 table th{
-    background-color: #fff;
+    background-color: var(--white);
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
@@ -199,7 +208,7 @@ table tbody tr:hover{
 }
 
 table td{
-    background-color: #fff;
+    background-color: var(--white);
     padding: 1rem 2rem;
 }
 
@@ -212,8 +221,10 @@ td.income{
 }
 
 td.expense{
-    color: #e92929;
+    color: var(--red);
 }
+
+
 /*END TRANSACTION-------------*/
 
 /*END MAIN---------------------*/
@@ -223,7 +234,7 @@ td.expense{
 .modal-overlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--black-transparent7);
     position: fixed;
     top: 0;
     display: flex;
@@ -237,12 +248,18 @@ td.expense{
 .modal-overlay.active{
     opacity: 1;
     visibility: visible;
+    transition: all 0.2s ease-in;
+}
+
+.modal-overlay{
+    transition: all 0.2s ease-out;
 }
 
 .modal{
-    background: #F0F2F5;
+    background: var(--white);
     padding: 2.4rem;
     position: relative;
+    border-radius: 1.5rem;
     z-index: 1;
 }
 
@@ -286,6 +303,7 @@ input{
 
 #save:hover{
     background-color: var(--light-blue);
+    transition: all .2s ease-in;
 }
 
 

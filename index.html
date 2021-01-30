@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" href="./dollar-symbol.svg">
+    <link rel="shortcut icon" href="./money.ico">
     <title>Finance.dev$</title>
 </head>
 
@@ -26,23 +26,23 @@
                     <span> Entradas </span>
                     <img src="./assets/income.svg" alt="Income">
                </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeOutPut">R$ 00,00</p>
             </div>
             <div class="card">
                 <h3>
                     <span> Saídas </span>
                     <img src="./assets/expense.svg" alt="Expense">
                 </h3>
-                    <p>R$ 2.000,00</p>
+                    <p id="expenseOutPut">R$ 00,00</p>
             </div>
             <div class="card total">
                 <h3>
                     <span> Total </span>
                     <img src="./assets/total.svg" alt="Income">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalOutPut">R$ 00,00</p>
             </div>
-            <a href="#" class="button new" onclick="modal.open() ">+ Nova transação</a>
+            <a href="#" class="button new" onclick="toggle()">+ Nova transação</a>
         </section>
         <section id="transactions">
             <h2 class="sr-only">Transações</h2>
@@ -57,30 +57,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">-R$ 500,00</td>
-                        <td class="date">25/04/2021</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Minus">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação de WebSite</td>
-                        <td class="income class="date">R$ 5.000,00</td>
-                        <td class="date">25/04/2021</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Minus">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">-R$ 200,00</td>
-                        <td class="date">25/04/2021</td>
-                        <td>
-                            <img src="./assets/minus.svg" alt="Minus">
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </section>
@@ -92,7 +69,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova transação</h2>
-                <form>
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label class="sr-only" for="description"></label>
                         <input type="text" id="description" name="description" placeholder="Descrição">
@@ -109,8 +86,8 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" class="button cancel" onclick="modal.close()">Cancelar</a>
-                        <button onclick="modal.close()" id="save">Salvar</button>
+                        <a href="#" class="button cancel" onclick="toggle()">Cancelar</a>
+                        <button id="save">Salvar</button>
                     </div>
                 </form>
             </div>
