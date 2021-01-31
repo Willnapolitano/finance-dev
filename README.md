@@ -2,7 +2,7 @@
   <img src="./assets/logo.svg">
  </p>
 
-<p align="center">A website for finance control based on "rocketseat's dev finance" made in Discover marathon you can acess the website here:https://finance-dev-mocha.vercel.app/#</p>
+<p align="center">A website for finance control based on "rocketseat's dev finance" made in Discover marathon you can acess the website here:https://financedev.vercel.app/#</p>
 
 <br/>
 <br/>
@@ -111,20 +111,17 @@
 <h1 id="printscreen">📷 Printscreen</h1>
 <!-Or you can use GIFs =D--->
         
-<img src="..."> <!--Or--> ![Text](Image)
-<img src="..."> <!--Or--> ![Text](Image)
-<img src="..."> <!--Or--> ![Text](Image)
-<img src="..."> <!--Or--> ![Text](Image)
-<img src="..."> <!--Or--> ![Text](Image)
+<img src="./screenshots/Screenshot_2021-01-31 Finance dev$.png"> 
+<img src="./screenshots/Screenshot_2021-01-31 Finance dev$(1).png"> 
+<img src="./screenshots/Screenshot_2021-01-31 Finance dev$(2).png"> 
+<img src="./screenshots/Screenshot_2021-01-31 Finance dev$(3).png"> 
 
 <br/><br/>
 
-<h1 id="licence">©️ License</h1>
-<p>Here you can put what licence you are using</p>
 
 <br/>
 
 <h1 id="author" align="center">Author</h1>
 
-<p align="center">Here you put your name</h1>
+<p align="center">José Wilson(Willnapolitano)</h1>
  
