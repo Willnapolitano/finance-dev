@@ -13,7 +13,6 @@
  <a href="#tecnologies">Tecnologies</a> • 
  <a href="dependencies">Dependencies</a>
  <a href="#contributions">Contribution</a> • 
- <a href="#license">License</a> • 
  <a href="#author">Author</a>
 </p>
 
