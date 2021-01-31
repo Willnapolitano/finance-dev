@@ -122,5 +122,5 @@
 
 <h1 id="author" align="center">Author</h1>
 
-<p align="center">José Wilson(Willnapolitano)</h1>
+<p align="center">Willnapolitano(Willnapolitano)</h1>
  
