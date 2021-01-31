@@ -2,7 +2,7 @@
   <img src="./assets/logo.svg">
  </p>
 
-<p align="center">A website for finance control based on "rocketseat's dev finance" made in Discover marathon you can acess the website here:</p>
+<p align="center">A website for finance control based on "rocketseat's dev finance" made in Discover marathon you can acess the website here:https://finance-dev-mocha.vercel.app/#</p>
 
 <br/>
 <br/>
@@ -26,7 +26,7 @@
  
 <h1 id="objective">🎯 Objective</h1>
  
-<p>Help peoples to control their pessoal finances</p>
+<p>The main objective of this project is help peoples to control their pessoal finances</p>
  
 <br/><br/>
  
@@ -46,14 +46,38 @@
    
    #So open index.html file in your favorite browser
    
+```
+<h3>Linux:<h3>
+ 
+```BASH
+
+   # First clone the repository
+   
+   git clone https://github.com/Willnapolitano/finance-dev.git
+   
+   # Then go to repository folder in your computer
+   
+   cd finance-dev
+   
+   #So open index.html file in your favorite browser
    
 ```
-<!--To add codes-->
-<p>Installation in Windows</p> 
-<h3>Linux:<h3>
-<p>Installation in Linux</p>
+
 <h3>MacOS</h3>
-<p>Installation in MacOS</p>
+
+```TERMINAL
+
+   # First clone the repository
+   
+   git clone https://github.com/Willnapolitano/finance-dev.git
+   
+   #Then go to repository folder in your computer
+   
+   cd finance-dev
+   
+   #So open index.html file in your favorite browser
+   
+```
  
 <br/><br/>
  
@@ -61,11 +85,10 @@
 <h1 id="tecnologies">💻 Tecnologies</h1>
  
 <ul>
- <li>Ex:NodeJS<!--And you can put the link to the tecnologies--></li>
- <li>Ex:React<!--And you can put the link to the tecnologies--></li>
- <li>Ex:MySQL<!--And you can put the link to the tecnologies--></li>
- <li>Ex:PHP<!--And you can put the link to the tecnologies--></li>
- <li>Ex:Java<!--And you can put the link to the tecnologies--></li>
+ <li>Git</li>
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>JAVASCRIPT</li>
 </ul>
 
 <br/><br/>
@@ -73,17 +96,15 @@
 <h1 id="dependencies">⚠️ Dependencies</h1>
 
  <ol>
- <li>Project dependencies</li>
- <li>Project dependencies</li>
- <li>Project dependencies</li>
- <li>Project dependencies</li>
+ <li>Git(To clone this repository)</li>
+ <li>A web browser</li>
  </ol>
  
 <br/><br/>
  
 <h1 id="contributions">👥 Contribution</h1>
 
-<p>How we can contribute with your project</p>
+<p>If you find something that can add to the project, like a new feature or even a bug to fix, fork that project and send a pull request =D</p>
 
 <br/><br/>
 
