@@ -1,4 +1,5 @@
 :root{
+    --card-total-text: #fff;
     --dark-blue: #363f5f;
     --blue: #0A38FC;
     --light-blue: rgb(47, 103, 214);
@@ -9,6 +10,7 @@
     --black-transparent379: rgba(0, 0, 0, 0.379);
     --black-transparent7: rgba(0, 0, 0, 0.7);
     --gray: #5f5f5f;
+    --modal-text: #fff;
 }
 *{
     margin: 0;
@@ -31,13 +33,19 @@ header{
     background: linear-gradient(40deg, var(--blue), var(--cyan));
     padding: 2rem 0 10rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header h1{
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--white);
+header img{
+    margin: 0 20px;
 }
+
+#darkModeButton-light , #darkModeButton-dark{
+    cursor: pointer;
+}
+
 
 /*TITLES-----------------------*/
 
@@ -159,7 +167,7 @@ button{
 
 .card.total{
     background: linear-gradient(40deg, var(--blue),var(--cyan)100%);
-    color: var(--white);
+    color: var(--card-total-text);
 }
 /*END CARDS----------------*/
 
@@ -280,6 +288,8 @@ input{
     border-radius: 0.2rem;
     padding: 0.8rem;
     width: 100%;
+    background-color: var(--white-blued);
+    color: var(--modal-text)
 }
 
 .input-group{
@@ -336,3 +346,22 @@ footer{
 }
 
 /*END RESPONSIVE---------------*/
+
+/*DARK MODE--------------------*/
+
+.dark-mode:root {
+    --card-total-text: rgb(241, 234, 234);
+    --dark-blue: #f6f7f8;
+    --blue: #919397;
+    --light-blue: rgb(124, 136, 160);
+    --cyan: #2dc99f;
+    --white-blued: rgb(78, 80, 80);
+    --white: rgb(66, 65, 65);
+    --red: #3b0404;
+    --black-transparent379: rgba(0, 0, 0, 0.379);
+    --black-transparent7: rgba(0, 0, 0, 0.7);
+    --gray: #f5efef;
+}
+
+
+/*END DARK MODE--------------------*/

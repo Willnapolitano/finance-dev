@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,17 @@
 <body>
 
     <header><!--HEADER-->
+        <div id="darkModeButton-light">
+            <div id="light">
+                <img src="./assets/sun-svgrepo-com.svg" alt="light mode" width="30">
+            </div>
+        </div>
         <img src="./assets/logo.svg" alt="Logo finance dev">
+        <div id="darkModeButton-dark">
+            <div id="dark">
+                <img src="./assets/crescent-moon-svgrepo-com.svg" alt="dark mode" width="20">
+            </div>
+        </div>
     </header><!--END HEADER-->
 
     <main class="container"><!--MAIN-->
@@ -97,6 +107,7 @@
     <footer><!--FOOTER-->
         <h6>2021-$Dev.finance</h6>
     </footer><!--END FOOTER-->
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/darkmode.js"></script>
 </body>
 </html>
